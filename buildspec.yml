@@ -6,6 +6,10 @@ phases:
     commands:
       - echo "Installing dependencies..."
       - pip install -r requirements.txt -t lib
+  pre_build:
+    commands:
+      - echo "pre_build started"
+      - echo "pre_build completed"
   build:
     commands:
       - echo "Zipping deployment package..."
